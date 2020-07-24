@@ -1,5 +1,6 @@
 package payroll;
 
-public interface OrderRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
 
+interface OrderRepository extends JpaRepository<Order, Long> {
 }
